@@ -1,0 +1,10 @@
+            /* Klavyeden girilen n kadar sayının aritmetik ortalamasını bulan program */
+            double sayi1, sayi2, ort;
+            Console.Write("Birinci Sayıyı Giriniz = ");
+            sayi1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("İkinci Sayıyı Giriniz = ");
+            sayi2 = Convert.ToDouble(Console.ReadLine());
+            ort = (sayi1 + sayi2) / 2;
+            Console.Write("Sonuç = ");
+            Console.Write(ort);
+            Console.ReadLine();
