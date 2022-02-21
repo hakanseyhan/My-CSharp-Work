@@ -1,0 +1,71 @@
+            //Girilen 5 sayıya göre ve basılan tuşa göre işlemleri yapan program.
+            
+            int sayi, toplam = 0, islem; 
+            string devam;
+            int bolunen = new int[5];
+            string menu = "1- Toplamlarını Göster \n 2- En Büyüğünü Göster \n 3-En Küçük Toplamlarını Göster \n 4- Bölünenleri Göster \n 5- Çıkış";
+            for (int i = 1; i < 5; i++)
+            {
+                Console.Write((i) + ".Sayıyı Giriniz");
+                sayi = Convert.ToInt32(Console.ReadLine());
+                toplam += sayi;
+                if (sayi % 2 == 0)
+                {
+                    bolunen[i] = sayi;
+                }
+            }
+            while (true)
+            {
+                while (true)
+                {
+                    Console.WriteLine("<<<<<<<<<<<<< İŞLEM MENÜSÜ >>>>>>>>>>>>");
+                    Console.WriteLine(menu);
+                    islem = Convert.ToInt32(Console.ReadLine());
+                    if (islem<0 || islem >5)
+                    {
+                        Console.WriteLine("Girdiğiniz Değerde Bir Seçenek Yok");
+                    }
+                    if (islem==1)
+                    {
+                        Console.WriteLine("Girilen Sayıları Toplamı : {0}", toplam);
+                        break;
+                    }
+                    else if (islem == 2 )
+                    {
+                        break;
+                    }
+                    else if (islem == 3)
+                    {
+
+                    }
+                    else if (islem == 4)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("<<<<<<<<<<< İKİYE BÖLÜNEN SAYILAR >>>>>>>>>>>");
+                        foreach (int i in bolunen)
+                        {
+                            Console.WriteLine(i);
+
+                        }
+                        break;
+                    }
+                    else
+                    {
+                        break;
+                    }
+
+
+                }
+                Console.Write("Devam Etmek İçin (e) Çıkmak İçin (q)'a Basınız.");
+                devam = Console.ReadLine();
+                devam.ToLower();
+                if (devam == "e")
+                {
+                    Console.Clear();
+                    Console.WriteLine(menu);
+
+                }
+                else
+                {
+                    break;
+                }
