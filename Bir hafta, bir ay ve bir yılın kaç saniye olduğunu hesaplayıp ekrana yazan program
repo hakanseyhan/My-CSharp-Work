@@ -1,0 +1,10 @@
+            int saat = 3600; //saniye
+            int hafta = saat * 7 * 24;
+            long ay = hafta * 4;  //Bir ay 28 gün olarak hesaplanmıştır.
+            long yil = ay * 12;
+            Console.WriteLine("# Bir Ay'ın,Hafta'nın ve Yıl'ın Kaç Saniye Olduğu Aşağıda Belirtilmiştir #");
+            Console.Write("\n");
+            Console.WriteLine("- Bir Hafta {0} Saniyedir.",hafta);
+            Console.WriteLine("- Bir Ay {0} Saniyedir.", ay);
+            Console.WriteLine("- Bir Yıl {0} Saniyedir.", yil);
+            Console.ReadLine();
