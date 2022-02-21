@@ -1,8 +1,0 @@
-            //Normal olarak bir insanın günde 8 saat uyuduğunu varsayarak ekrandan yaşı girilecek bir kişinin toplam kaç saat / gün / ay / yılını uykuda geçirdiğini bulan program.
-            Console.WriteLine("Lütfen Yaşınızı Giriniz");
-            double sayi = double.Parse(Console.ReadLine());
-            double gün = sayi * 365 / 3;
-            double ay = sayi * 12 / 3;
-            double yil = sayi / 3;
-            Console.WriteLine("{0} yıl , {1} ay ,{2} gün Uyumuşsunuz!", yil, ay, gün);
-            Console.ReadLine();
