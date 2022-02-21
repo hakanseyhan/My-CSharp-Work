@@ -1,0 +1,20 @@
+            /* Klavyeden girilen bir sayıyı, { 1, 30, 20, 5, 50, 30, 105, 113}
+             şeklinde elemanları olan bir dizide arayan ve bulduktan sonra bunu 100 sayısı ile değiştiren program.*/
+             
+            int[] dizi = { 1, 30, 20, 5, 50, 30, 105, 113 };
+            Console.WriteLine("1, 30, 20, 5, 50, 30, 105, 113");
+            Console.WriteLine("Değiştirmek İstediğin Sayıyı Gir : "); 
+            int sayi3 = int.Parse(Console.ReadLine()); 
+            for (int i = 0; i < dizi.Length; i++) 
+            { 
+                if (dizi[i] == sayi3) 
+                { 
+                    dizi[i] = 100;
+                } 
+            }
+            Console.WriteLine("Sayı 100 ile Değiştikten Sonra :");
+            for (int i = 0; i < dizi.Length; i++) 
+            {
+                Console.WriteLine(dizi[i]); 
+            }
+            Console.ReadLine();
