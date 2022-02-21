@@ -1,0 +1,20 @@
+            /*Klavyeden girilen ve bir öğrenci aldığı bir dersten iki sınav olmaktadır.
+            Bu sınavların ortalaması 60’in üzerinde ise ‘GEÇTİ’ ; 50 ile 60 arasında ise ‘KALIR’ ; ve 50’ın altında ise ‘UZATILIR’ durumuna gelecektir.
+            Öğrencinin sınavlarını giren ve hesaplayıp ekrana yazdıran program*/
+           
+            Console.WriteLine("Lütfen Notunuzu Girin : ");
+            Console.WriteLine("==========================");
+            int puan = int.Parse(Console.ReadLine());
+            if (puan >= 60)
+            {
+                Console.Write("Geçtin");
+            }
+            else if (50 > puan)
+            {
+                Console.Write("Uzatılır");
+            }
+            else
+            {
+                Console.Write("Kaldın");
+            }
+            Console.ReadLine();
