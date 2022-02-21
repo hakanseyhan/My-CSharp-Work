@@ -1,0 +1,13 @@
+            //Bir satranç tahtasının 1.karesine 1 buğday, 2 karesine 1.karenin 2 katı buğday, 3.karesine 2.karenin 2 katı buğday konuluyor.Sonuncu kareye kaç buğday konulduğunu bulan program.
+
+            decimal us, sonuc = 1;
+            Console.WriteLine("=================================================");
+            us = 64;
+            for (int i = 1; i < 64; i++)
+            {
+                sonuc *= 2;
+
+            }
+            Console.WriteLine("Son Karedeki Buğday Sayısı : {0}", sonuc);
+            Console.WriteLine("==================================================");
+            Console.ReadLine();
