@@ -1,0 +1,13 @@
+            //Klavyeden girilen iki sayıyı(*) çarpma operatörü kullanmadan çarpan ve ekrana yazdıran programı yazınız.
+
+            int sonuc = 0;
+            Console.Write("Birinci Sayıyı Giriniz : ");
+            int sayi1 = int.Parse(Console.ReadLine());
+            Console.Write("İkinci Sayıyı Giriniz : ");
+            int sayi2 = int.Parse(Console.ReadLine());
+            for (int i = 1; i <= sayi2; i++)
+            {
+                sonuc += sayi1;
+            }
+                Console.WriteLine(("Girdiğiniz İki Sayının Çarpımı : ") + sonuc);
+                Console.ReadLine();
