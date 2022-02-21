@@ -1,4 +1,5 @@
             /*Bir hafta, bir ay ve bir yılın kaç saniye olduğunu hesaplayıp ekrana yazan program*/
+            
             int saat = 3600; //saniye
             int hafta = saat * 7 * 24;
             long ay = hafta * 4;  //Bir ay 28 gün olarak hesaplanmıştır.
