@@ -1,0 +1,24 @@
+            /*Klavyeden girilen bir sayının mükemmel sayı olup olmadığını bulan program. 
+            (Mükemmel Sayı: bir sayının pozitif bölenlerinin toplamı o sayıya eşitse bu sayı mükemmel sayıdır. 
+            Örnek: Girilen Sayı 10 olsun bu sayının Bölenleri 1, 2, 5 ‘dir. Şimdi Bu bölenleri toplayalım.
+            1 + 2 + 5 = 7.Girilen Sayı 10 du,7 ye eşit olmadığı için bu sayı mükemmel sayı değildir.)*/
+           
+            Console.WriteLine("Sayı giriniz : ");
+            int sayi = Convert.ToInt32(Console.ReadLine());
+            int toplam = 0;
+            for (int i = 1; i < sayi; i++) //sayının kendisi hariç olacağı için <= operatörü koymadım..
+            {
+                if (sayi % i == 0)
+                {
+                    toplam += i;
+                }
+            }
+            if (toplam == sayi)
+            {
+                Console.WriteLine(sayi + " Sayısı Mükemmel Sayıdır.");
+            }
+            else
+            {
+                Console.WriteLine(sayi + " Sayısı Mükemmel Sayı Değildir.");
+            }
+            Console.ReadLine();
