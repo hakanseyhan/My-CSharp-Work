@@ -1,0 +1,12 @@
+            //Klavyeden girilen bir sayının faktöriyelini bulan ve ekrana yazdıran program.
+            
+            Console.Write("Faktöriyeli Hesaplanacak Sayıyı Giriniz : ");
+            int sayi = int.Parse(Console.ReadLine());
+            int sonuc = 1;
+            while (sayi > 0)
+            {
+                sonuc *= sayi;
+                sayi--;
+            }
+            Console.WriteLine("İşlemin Sonucu : " + sonuc);
+            Console.ReadKey();
