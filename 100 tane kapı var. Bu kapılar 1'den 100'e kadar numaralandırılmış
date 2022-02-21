@@ -1,0 +1,34 @@
+            //100 tane kapı var. Bu kapılar 1'den 100'e kadar numaralandırılmış.
+            İlk olarak kapıların hepsi kilitlidir. Elimizde 1'den 20'ye kadar numaralandırılmış 20 tane anahtar var.
+            Bir kapının numarası bir anahtarın numarasına tam bölünüyorsa o anahtar o kapıyı açabiliyor (ya da kilitleyebiliyor!).
+            1 numaralı anahtardan başlayarak her anahtar için kapıları dolaşılıyor. Anahtar ile kapı açılıyor ya da kilitleniyor.
+            Yani kapı açıksa kilitleniyor kapı kilitli ise kapı açılıyor.
+            20.turdan sonra, yani son anahtarın kullanılmasından sonra hangi kapılar açık hangi kapılar kilitlidir? 
+            Açık olan kapıların numaralarını ekrana yazdıran C programı.
+
+            Boolean[] kapilar = new Boolean[100];
+            for (int i = 1; i <= 20; i++)
+            {
+                for (int j = 0; j < kapilar.Length; j++)
+                {
+                    if ((j+1)%i==0)
+                        kapilar[j] = !(kapilar[j]);
+                    
+                }
+
+            }
+            string acikkapilar = "";
+                string kapalikapılar = "";
+                for (int i = 0; i < kapilar.Length; i++)
+                {
+                if (kapilar[i])
+                    acikkapilar = acikkapilar + "," + (i + 1).ToString();   
+                
+                else
+                
+                    kapalikapılar = kapalikapılar + "," + (i + 1).ToString();
+               
+                }
+            Console.WriteLine("Açık Kapılar\n{0}", acikkapilar);
+            Console.WriteLine("Kapalı Kapılar\n{0}", kapalikapılar);
+            Console.ReadLine();
